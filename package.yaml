@@ -1,0 +1,36 @@
+name: aoc2017-hs
+version: '0.1.0.0'
+synopsis: Short description of your package
+description: Please see the README on Github at <https://github.com/jez/aoc2017-hs#readme>
+author: Jake Zimmerman
+maintainer: zimmerman.jake@gmail.com
+license: MIT
+github: jez/aoc2017-hs
+category: Web
+copyright: 2017 Jake Zimmerman
+
+extra-source-files:
+  - README.md
+
+dependencies:
+  - base >=4.7 && <5
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - AoC
+
+executables:
+  aoc2017:
+    main: Main.hs
+    source-dirs: app
+    dependencies:
+      - aoc2017-hs
+
+tests:
+  spec:
+    main: Spec.hs
+    source-dirs: test
+    dependencies:
+      - hspec
+      - aoc2017-hs
