@@ -12,6 +12,14 @@ copyright: 2017 Jake Zimmerman
 extra-source-files:
   - README.md
 
+ghc-options:
+  - -Wall
+  - -Wcompat
+  - -Wmissing-signatures
+  - -Werror
+  - -funbox-strict-fields
+  - -Wno-duplicate-exports
+
 dependencies:
   - base >=4.7 && <5
 
