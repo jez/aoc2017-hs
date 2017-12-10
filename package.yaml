@@ -22,11 +22,15 @@ ghc-options:
 
 dependencies:
   - base >=4.7 && <5
+  - containers
+  - mtl
 
 library:
   source-dirs: src
   exposed-modules:
     - AoC
+    # Just for testing
+    - AoC.SpiralMemory
 
 executables:
   aoc2017:

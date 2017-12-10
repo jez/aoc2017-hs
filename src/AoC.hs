@@ -11,12 +11,21 @@ module AoC
   , sumOfDifferences
   , sumOfDivisibles
 
+  , day3Input
+  , day3Pt1
+  , day3Pt2
+  , manhattanSpiralDist
+  , firstSpiralGreater
   ) where
 
 import AoC.InverseCaptcha (sumEqualAdjacentPairs, sumEqualOppositePairs)
 import AoC.CorruptionChecksum (sumOfDifferences, sumOfDivisibles)
+import AoC.SpiralMemory (manhattanSpiralDist, firstSpiralGreater)
 
+day1Pt1 :: String -> Int
 day1Pt1 = sumEqualAdjacentPairs
+
+day1Pt2 :: String -> Int
 day1Pt2 = sumEqualOppositePairs
 
 day1Input :: String
@@ -48,3 +57,11 @@ day2Input =
   , [127  , 375  , 330  , 257  , 220  , 295  , 145  , 335  , 304  , 165  , 151  , 141  , 289  , 256  , 195  , 272]
   ]
 
+day3Pt1 :: Integer -> Integer
+day3Pt1 = manhattanSpiralDist
+
+day3Pt2 :: Integer -> Integer
+day3Pt2 = firstSpiralGreater
+
+day3Input :: Integer
+day3Input = 325489
